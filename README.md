@@ -10,7 +10,7 @@
   <img src="https://github.com/gilsonfsdev/coffee-delivery/assets/99298840/08e30892-e08c-449d-9e50-69634fab1e20" width=50% />
 </div>
 
-<h4 align="center"><a href="https://landing-page-attorney.vercel.app/#">Clique para visitar o projeto</a></h4>
+<h4 align="center"><a href="">Clique para visitar o projeto</a></h4>
 
 ---
 

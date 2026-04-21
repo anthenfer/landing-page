@@ -8,24 +8,21 @@ export function Why() {
   return (
     <Wrapper>
       <Div1>
-        <h3>Porque contratar a VLV advogados?</h3>
+        <h3>Porque contratar nossos serviços?</h3>
         <div>
           <p>
             Em um momento conturbado da vida, no qual o mundo inteiro parece
             conspirar contra nossa felicidade, tudo o que buscamos é um lugar
             para encontrar apoio; alguém de confiança que possa estender a mão.
-            O VLV Advogados, há muito tempo, deixou de ser apenas um escritório.
+            Os nossos serviços, há muito tempo, deixou de ser apenas um escritório.
             <strong>
               {' '}
-              Assim, nos transformamos no sonho VLV: o sonho de revolucionar o
-              mercado jurídico e as relações humanas
+              Assim, nos transformamos vidas: protegendo direitos e garantindo que o devido processo legal seja respeitado. 
             </strong>
             .
           </p>
           <p>
-            Estamos 100% focados em ajudar nossos clientes a reestruturarem seus
-            caminhos, alcançarem objetivos e viverem uma vida de paz. Saiba como
-            nossos clientes estão sendo impactados diariamente. Entre em contato
+            Estamos focados em contribuir através de nossa atuação que os direitos humanos e o processo justo se torne prioridade. Entre em contato
             agora através do nosso WhatsApp, telefone ou e-mail.
           </p>
         </div>
@@ -37,9 +34,7 @@ export function Why() {
           <div>
             <h4>NOSSO OBJETIVO</h4>
             <p>
-              A VLV Advogados se destaca pelo compromisso incansável em oferecer
-              soluções jurídicas personalizadas e resultados excepcionais para
-              cada cliente.
+              Atuação na defesa de pessoas investigadas ou acusadas, com foco na proteção de direitos e na garantia de um processo justo.
             </p>
           </div>
         </div>
@@ -49,10 +44,7 @@ export function Why() {
           <div>
             <h4>ATENDIMENTO ÚNICO</h4>
             <p>
-              Nosso diferencial está na combinação perfeita entre expertise
-              jurídica de alto nível, atendimento personalizado e resultados
-              consistentes, garantindo tranquilidade e segurança para nossos
-              clientes.
+              Atendimento objetivo, direto e claro. No Direito Criminal a assertividade e a estratégia correta fazem a diferença nos resultados.
             </p>
           </div>
         </div>

@@ -10,17 +10,17 @@ export function Home() {
     <Container>
       <Wrapper>
         <div>
-          <h1>Advogados Especializados</h1>
+          <h2>Advogado Criminalista</h2>
+          <h1>Dr. César Nunes Criminalista</h1>
           <p>
-            Nós da VLV Advogados, estamos prontos para oferecer a você os
-            melhores serviços jurídicos e a representação legal que você merece.
+            O direito criminal é ação, é atitude. O advogado deve estar onde o problema acontece, realizando a defesa presencialmente. 
           </p>
           <a
-            href="https://wa.me/5544998505620"
+            href="https://wa.me/5519994053277"
             target="_blank"
             rel="noreferrer"
           >
-            Fale com a nossa equipe
+            Contato pelo WhatsApp
           </a>
           <Div2>
             <li>
@@ -36,11 +36,6 @@ export function Home() {
             <li>
               <a href="#" target="_blank" rel="noreferrer">
                 <FiYoutube size={20} />
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" rel="noreferrer">
-                <SlSocialTwitter size={20} />
               </a>
             </li>
           </Div2>

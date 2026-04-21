@@ -54,9 +54,8 @@ export function Why() {
           <div>
             <h4>EQUIPE ESPECIALIZADA</h4>
             <p>
-              A VLV Adovogados se destaca pela busca constante pela excelência,
-              com uma equipe altamente qualificada e comprometida em oferecer
-              soluções jurídicas eficazes e inovadoras para cada cliente.
+              Responsabilidade e estratégia no Direito Criminal. 
+              Cada detalhe é analisado pela equipe para definir a melhor linha de defesa.
             </p>
           </div>
         </div>

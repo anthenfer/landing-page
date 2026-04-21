@@ -28,7 +28,8 @@ export const AccordionTitle = styled.div`
   gap: 1rem;
 `
 
-export const AccordionContent = styled.div<{ isOpen: boolean }>`
+// eslint-disable-next-line prettier/prettier
+export const AccordionContent = styled.div<{isOpen: boolean}>`
   display: ${({ isOpen }: { isOpen: boolean }) => (isOpen ? 'block' : 'none')};
   padding: 1rem 3rem;
   color: ${(props) => props.theme['base-subtitle']};

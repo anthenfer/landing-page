@@ -26,13 +26,12 @@ export function Accordion() {
           ) : (
             <IoIosArrowDropdownCircle size={20} />
           )}
-          Qual é o foco principal da sua empresa de advocacia?
+          Fui preso em flagrante. O que fazer?
         </AccordionTitle>
         <AccordionContent isOpen={openIndex === 0}>
-          Nossa empresa de advocacia concentra-se principalmente em direito
-          empresarial, civil, trabalhista e tributário. Oferecemos uma abordagem
-          abrangente para atender às necessidades legais de nossos clientes,
-          tanto individuais quanto corporativos.
+          Procure um advogado imediatamente. A atuação nas primeiras horas é
+          decisiva para analisar a legalidade da prisão e buscar sua liberdade o
+          quanto antes.
         </AccordionContent>
       </AccordionItem>
 
@@ -43,13 +42,11 @@ export function Accordion() {
           ) : (
             <IoIosArrowDropdownCircle size={20} />
           )}
-          Como posso agendar uma consulta jurídica?
+          Estou sendo investigado. Já preciso de advogado?
         </AccordionTitle>
         <AccordionContent isOpen={openIndex === 1}>
-          Para agendar uma consulta, entre em contato conosco por telefone ou
-          através das nossas redes sociais. Estamos comprometidos em oferecer
-          atendimento personalizado e responder prontamente às suas
-          solicitações.
+          Sim. A defesa começa na investigação. Uma atuação estratégica desde o
+          início pode evitar erros e proteger seus direitos.
         </AccordionContent>
       </AccordionItem>
 
@@ -60,31 +57,11 @@ export function Accordion() {
           ) : (
             <IoIosArrowDropdownCircle size={20} />
           )}
-          Quais áreas a empresa atende clientes corporativos?
+          Posso responder ao processo em liberdade?
         </AccordionTitle>
         <AccordionContent isOpen={openIndex === 2}>
-          Para nossos clientes corporativos, oferecemos serviços especializados
-          em contratos comerciais, resolução de litígios, consultoria
-          trabalhista e orientação jurídica para garantir a conformidade legal e
-          o sucesso contínuo de seus negócios.
-        </AccordionContent>
-      </AccordionItem>
-
-      <AccordionItem>
-        <AccordionTitle onClick={() => toggleAccordion(3)}>
-          {openIndex === 3 ? (
-            <IoIosArrowDropupCircle size={20} />
-          ) : (
-            <IoIosArrowDropdownCircle size={20} />
-          )}
-          Como sua empresa aborda a resolução de conflitos?
-        </AccordionTitle>
-        <AccordionContent isOpen={openIndex === 3}>
-          Nossa abordagem busca soluções eficazes e eficientes para resolver
-          conflitos, utilizando métodos como negociação, mediação e, quando
-          necessário, litígios judiciais. Nosso objetivo é alcançar resultados
-          favoráveis que atendam aos interesses e às expectativas de nossos
-          clientes.
+          Depende do caso. É possível solicitar liberdade provisória ou outras
+          medidas, com base em uma análise técnica da situação.
         </AccordionContent>
       </AccordionItem>
 
@@ -95,14 +72,11 @@ export function Accordion() {
           ) : (
             <IoIosArrowDropdownCircle size={20} />
           )}
-          Como posso acompanhar o progresso do meu processo legal?
+          O que faz a diferença em uma defesa criminal?
         </AccordionTitle>
         <AccordionContent isOpen={openIndex === 4}>
-          Oferecemos uma abordagem transparente ao fornecer atualizações
-          regulares sobre o andamento do seu caso. Além disso, disponibilizamos
-          uma plataforma online segura, permitindo que você acesse documentos
-          relacionados ao seu processo a qualquer momento, garantindo total
-          visibilidade.
+          Estratégia e rapidez. Cada detalhe do processo pode mudar o resultado
+          quando analisado de forma técnica e assertiva.
         </AccordionContent>
       </AccordionItem>
 

@@ -11,7 +11,7 @@ export const HeaderContainer = styled.header`
   color: ${(props) => props.theme['base-nav']};
 
   background: ${(props) => props.theme['base-white']};
-  z-index: 1;
+  z-index: 1000;
 `
 
 export const Div1 = styled.div`

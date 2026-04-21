@@ -1,5 +1,5 @@
 import { Div1, HeaderContainer, MenuMobileOpen, NavBar, Ul } from './styles'
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/logo2.png'
 import { IoMenu, IoClose } from 'react-icons/io5'
 import { useState } from 'react'
 
@@ -14,7 +14,11 @@ export function Header() {
     <>
       <HeaderContainer>
         <Div1>
-          <img src={logo} alt="" />
+          <img
+            src={logo}
+            alt="logo do escritório"
+            style={{ width: '109px', height: '109px' }}
+          />
 
           <NavBar>
             <ul>

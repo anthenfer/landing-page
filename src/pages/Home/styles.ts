@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const Container = styled.main`
-  margin: 50px auto 0 auto;
+  margin: 0 auto;
+  padding-top: 90px;
   background-color: ${(props) => props.theme['blue-home']};
   color: ${(props) => props.theme['base-white']};
 
@@ -13,6 +14,14 @@ export const Container = styled.main`
     font-size: 1.2rem;
     font-weight: 100;
     line-height: 1.3;
+  }
+
+  @media (max-width: 996px) {
+    padding-top: 120px;
+  }
+
+  @media (max-width: 569px) {
+    padding-top: 130px;
   }
 `
 

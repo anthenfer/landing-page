@@ -76,7 +76,7 @@ export const DetailsBloc = styled.div`
   }
 `
 
-export const ServicesLink = styled.button<{ selected: boolean }>`
+export const ServicesLink = styled.button`
   font-weight: ${({ selected }) => (selected ? 'bold' : 'normal')};
   border: none;
   cursor: pointer;
@@ -91,10 +91,11 @@ export const ServicesLink = styled.button<{ selected: boolean }>`
   }
 `
 
-export const DivDetails = styled.div<{ transition: boolean }>`
+export const DivDetails = styled.div`
   transition: opacity 1s linear;
   opacity: ${({ transition }) => (transition ? 1 : 0.5)};
-  width: 480px;
+  width: 100%;
+  max-width: 700px;
 
   display: flex;
   flex-direction: column;
@@ -117,21 +118,24 @@ export const DivDetails = styled.div<{ transition: boolean }>`
   div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     border: 1px solid transparent;
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: 2rem;
+    min-height: 180px;
     background-color: ${(props) => props.theme['purple-base']};
-    gap: 0.2rem;
+    gap: 0.8rem;
 
     h3 {
-      font-size: 0.9rem;
-      font-weight: bold;
-      color: ${(props) => props.theme['base-white']};
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: white;
     }
 
     p {
-      color: ${(props) => props.theme['purple-light']};
-      font-size: 0.8rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: white;
     }
   }
 `

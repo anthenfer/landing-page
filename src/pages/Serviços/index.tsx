@@ -37,7 +37,7 @@ export function Servicos() {
                 <span>
                   <FaLongArrowAltRight size={20} />
                 </span>
-                Acompanhamento na Delegacia 
+                Acompanhamento na Delegacia
               </ServicesLink>
             </li>
 
@@ -64,8 +64,6 @@ export function Servicos() {
                 Defesa em Processos Criminais
               </ServicesLink>
             </li>
-                   
-            
             <li>
               <ServicesLink
                 selected={selectedTopic === 4}
@@ -78,7 +76,7 @@ export function Servicos() {
               </ServicesLink>
             </li>
 
-              <li>
+            <li>
               <ServicesLink
                 selected={selectedTopic === 5}
                 onClick={() => handleTopicClick(5)}
@@ -103,7 +101,11 @@ export function Servicos() {
           {selectedTopic === 1 && (
             <DivDetails transition={detailsTransition}>
               <div>
-                <h3> Assistência durante os procedimentos criminais iniciais. Com responsabilidade técnica e malícia jurídica. </h3>
+                <h3>
+                  {''}
+                  Assistência durante os procedimentos criminais iniciais. Com
+                  responsabilidade técnica e malícia jurídica.{' '}
+                </h3>
               </div>
             </DivDetails>
           )}
@@ -111,7 +113,11 @@ export function Servicos() {
           {selectedTopic === 2 && (
             <DivDetails transition={detailsTransition}>
               <div>
-                <h3>Orientações focadas no Direito Penal, oferecendo análise de casos, estratégias de defesa e suporte contínuo em questões criminais.</h3>
+                <h3>
+                  Orientações focadas no Direito Penal, oferecendo análise de
+                  casos, estratégias de defesa e suporte contínuo em questões
+                  criminais.
+                </h3>
               </div>
             </DivDetails>
           )}
@@ -119,23 +125,33 @@ export function Servicos() {
           {selectedTopic === 3 && (
             <DivDetails transition={detailsTransition}>
               <div>
-                <h3>Atuação estratégica na construção de defesas técnicas sólidas, acompanhando o processo com foco na proteção dos seus direitos.</h3>
+                <h3>
+                  Atuação estratégica na construção de defesas técnicas sólidas,
+                  acompanhando o processo com foco na proteção dos seus
+                  direitos.
+                </h3>
               </div>
             </DivDetails>
           )}
 
-           {selectedTopic === 4 && (
+          {selectedTopic === 4 && (
             <DivDetails transition={detailsTransition}>
               <div>
-                <h3>Acompanhamento e defesa em etapas pós-condenação, garantindo que os direitos do condenado sejam respeitados.</h3>
+                <h3>
+                  Acompanhamento e defesa em etapas pós-condenação, garantindo
+                  que os direitos do condenado sejam respeitados.
+                </h3>
               </div>
             </DivDetails>
           )}
 
-           {selectedTopic === 5 && (
+          {selectedTopic === 5 && (
             <DivDetails transition={detailsTransition}>
               <div>
-                <h3>Atuação rigorosa em defesa dos direitos individuais, enfrentando acusações e garantindo um processo justo.</h3>
+                <h3>
+                  Atuação rigorosa em defesa dos direitos individuais,
+                  enfrentando acusações e garantindo um processo justo.
+                </h3>
               </div>
             </DivDetails>
           )}

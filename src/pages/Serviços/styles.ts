@@ -1,9 +1,17 @@
 import styled from 'styled-components'
 
+interface ServicesLinkProps {
+  $selected: boolean
+}
+
+interface DivDetailsProps {
+  $transition: boolean
+}
+
 export const Container = styled.main`
   margin: 0 auto;
   background-color: ${(props) => props.theme['base-background']};
-  color: black;
+  color: ${(props) => props.theme['base-title']};
 `
 
 export const Wrapper = styled.div`
@@ -21,6 +29,7 @@ export const Wrapper = styled.div`
     justify-content: center;
   }
 `
+
 export const ServicesBloc = styled.div`
   margin-top: 3rem;
   display: flex;
@@ -45,11 +54,13 @@ export const ServicesBloc = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 0;
+    margin: 0;
   }
 
   a {
     text-decoration: none;
-    border: 1px transparent black;
+    border: 1px solid transparent;
     border-radius: 0.5rem;
     padding: 1rem 0.5rem;
     width: 100%;
@@ -57,7 +68,6 @@ export const ServicesBloc = styled.div`
     font-weight: 700;
     background-color: ${(props) => props.theme['base-nav']};
     color: ${(props) => props.theme['base-white']};
-
     text-align: center;
     transition: 0.3s all ease-in-out;
 
@@ -76,24 +86,27 @@ export const DetailsBloc = styled.div`
   }
 `
 
-export const ServicesLink = styled.button`
-  font-weight: ${({ selected }) => (selected ? 'bold' : 'normal')};
+export const ServicesLink = styled.button<ServicesLinkProps>`
+  font-weight: ${({ $selected }) => ($selected ? 'bold' : 'normal')};
   border: none;
+  background: transparent;
   cursor: pointer;
   font-size: 1rem;
   position: relative;
+  text-align: left;
+  color: ${(props) => props.theme['base-title']};
 
   span {
-    display: ${({ selected }) => (selected ? 'initial' : 'none')};
+    display: ${({ $selected }) => ($selected ? 'initial' : 'none')};
     position: absolute;
     left: -2rem;
     color: ${(props) => props.theme['blue-home']};
   }
 `
 
-export const DivDetails = styled.div`
+export const DivDetails = styled.div<DivDetailsProps>`
   transition: opacity 1s linear;
-  opacity: ${({ transition }) => (transition ? 1 : 0.5)};
+  opacity: ${({ $transition }) => ($transition ? 1 : 0.5)};
   width: 100%;
   max-width: 700px;
 
@@ -129,13 +142,13 @@ export const DivDetails = styled.div`
     h3 {
       font-size: 1.1rem;
       font-weight: 600;
-      color: white;
+      color: ${(props) => props.theme['base-white']};
     }
 
     p {
       font-size: 0.95rem;
       line-height: 1.5;
-      color: white;
+      color: ${(props) => props.theme['base-white']};
     }
   }
 `

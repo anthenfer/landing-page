@@ -31,7 +31,7 @@ export function Servicos() {
           <ul>
             <li>
               <ServicesLink
-                selected={selectedTopic === 1}
+                $selected={selectedTopic === 1}
                 onClick={() => handleTopicClick(1)}
               >
                 <span>
@@ -43,7 +43,7 @@ export function Servicos() {
 
             <li>
               <ServicesLink
-                selected={selectedTopic === 2}
+                $selected={selectedTopic === 2}
                 onClick={() => handleTopicClick(2)}
               >
                 <span>
@@ -55,7 +55,7 @@ export function Servicos() {
 
             <li>
               <ServicesLink
-                selected={selectedTopic === 3}
+                $selected={selectedTopic === 3}
                 onClick={() => handleTopicClick(3)}
               >
                 <span>
@@ -64,9 +64,10 @@ export function Servicos() {
                 Defesa em Processos Criminais
               </ServicesLink>
             </li>
+
             <li>
               <ServicesLink
-                selected={selectedTopic === 4}
+                $selected={selectedTopic === 4}
                 onClick={() => handleTopicClick(4)}
               >
                 <span>
@@ -78,7 +79,7 @@ export function Servicos() {
 
             <li>
               <ServicesLink
-                selected={selectedTopic === 5}
+                $selected={selectedTopic === 5}
                 onClick={() => handleTopicClick(5)}
               >
                 <span>
@@ -88,6 +89,7 @@ export function Servicos() {
               </ServicesLink>
             </li>
           </ul>
+
           <a
             href="https://wa.me/5519994053277"
             target="_blank"
@@ -99,19 +101,18 @@ export function Servicos() {
 
         <DetailsBloc>
           {selectedTopic === 1 && (
-            <DivDetails transition={detailsTransition}>
+            <DivDetails $transition={detailsTransition}>
               <div>
                 <h3>
-                  {''}
                   Assistência durante os procedimentos criminais iniciais. Com
-                  responsabilidade técnica e malícia jurídica.{' '}
+                  responsabilidade técnica e malícia jurídica.
                 </h3>
               </div>
             </DivDetails>
           )}
 
           {selectedTopic === 2 && (
-            <DivDetails transition={detailsTransition}>
+            <DivDetails $transition={detailsTransition}>
               <div>
                 <h3>
                   Orientações focadas no Direito Penal, oferecendo análise de
@@ -123,7 +124,7 @@ export function Servicos() {
           )}
 
           {selectedTopic === 3 && (
-            <DivDetails transition={detailsTransition}>
+            <DivDetails $transition={detailsTransition}>
               <div>
                 <h3>
                   Atuação estratégica na construção de defesas técnicas sólidas,
@@ -135,7 +136,7 @@ export function Servicos() {
           )}
 
           {selectedTopic === 4 && (
-            <DivDetails transition={detailsTransition}>
+            <DivDetails $transition={detailsTransition}>
               <div>
                 <h3>
                   Acompanhamento e defesa em etapas pós-condenação, garantindo
@@ -146,7 +147,7 @@ export function Servicos() {
           )}
 
           {selectedTopic === 5 && (
-            <DivDetails transition={detailsTransition}>
+            <DivDetails $transition={detailsTransition}>
               <div>
                 <h3>
                   Atuação rigorosa em defesa dos direitos individuais,

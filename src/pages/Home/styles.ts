@@ -31,8 +31,8 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  height: 600px;
-  padding-top: 1rem;
+  min-height: 600px;
+  padding: 1rem 1.5rem 3rem;
 
   @media (max-width: 1200px) {
     max-width: 900px;
@@ -43,27 +43,15 @@ export const Wrapper = styled.div`
   @media (max-width: 996px) {
     flex-direction: column-reverse;
     text-align: center;
-    height: 1000px;
-    padding-top: 0;
+    height: auto;
+    min-height: unset;
+    padding: 1rem 1.5rem 3rem;
+    gap: 2rem;
 
     img {
-      height: 60%;
-    }
-
-    @media (max-width: 660px) {
-      img {
-        height: 50%;
-      }
-    }
-
-    @media (max-width: 569px) {
-      img {
-        height: 35%;
-      }
-    }
-
-    @media (max-width: 570px) {
-      max-width: 50%;
+      width: 100%;
+      max-width: 420px;
+      height: auto;
     }
   }
 
@@ -78,11 +66,18 @@ export const Wrapper = styled.div`
 
     p {
       width: 80%;
+
+      @media (max-width: 996px) {
+        width: 100%;
+        max-width: 420px;
+      }
     }
   }
 
   img {
-    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 
   a {
@@ -94,7 +89,6 @@ export const Wrapper = styled.div`
     font-weight: 700;
     background-color: ${(props) => props.theme['base-nav']};
     color: ${(props) => props.theme['base-white']};
-
     text-align: center;
     transition: 0.3s all ease-in-out;
 
@@ -107,14 +101,23 @@ export const Wrapper = styled.div`
 
 export const Div2 = styled.ul`
   display: flex;
-  gap: 0.3rem;
+  gap: 0.6rem;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
 
   li {
     list-style-type: none;
     text-align: center;
 
     a {
-      padding: 1rem 0.8rem 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      padding: 0;
+      border-radius: 0.5rem;
     }
   }
 

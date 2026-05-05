@@ -58,8 +58,9 @@ export const Div2 = styled.div`
       align-items: center;
     }
     img {
-      max-width: 300px;
-      height: auto;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
       border-radius: 6px;
       margin-bottom: 1rem;
 
